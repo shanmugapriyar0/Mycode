@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration form</title>
+    <link rel="stylesheet" href="login.css">
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <h1> Register your account </h1>
+    <form  id="registeration" class="form" action="register.php"  method="POST" >
+        <lable for="name">Name</lable><br>
+        <input type="text" name="fname"  id="name" placeholder="Enter your full name" required=""/><br>
+        <lable for="us_name">Username</lable><br>
+        <input type="text" id="us_name" placeholder="Enter your Username" name="usname" required=""/><br>
+        <lable for="email">Email address</lable><br>
+        <input type="text" id="email" placeholder="Enter your email address" name="email" required=""/><br>
+        <lable for="pass1">Password</lable><br>
+        <input type="password" id="pass1" placeholder="Enter your password" name="pass1" required=""/><br>
+        <lable for="pass2">Username</lable><br>
+        
+        <input type="password" id="pass2" placeholder="Enter your password again" name="pass2" required=""/><br>
+        
+        
+        <p>Password must be 8 characters at least</p><br/>
+        <button type="submit" name="" value="register" onclick="validatePassword()" >Signup</button>
+        <p id="message"></p>
+        <p id="para"> Aleady have and account? <a href="C:\Users\Lenovo\Desktop\interncom\task1.html">Sign in</a></p>
+    </form>
+    
+    
+</body>
+</html>
